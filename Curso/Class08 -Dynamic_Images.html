@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<style>
+    p{
+     font-size: larger;   
+    }
+</style>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Aumenta ou diminui o tamanho das imagens consoante o dispositivo utilizado e/ou o zoom aplicado, no navegador.</p>
+    <picture>
+        <!--Picture para se conseguir chamar várias imagens , consoante a resoluçao pretendida.
+        As sources devem obedecer uma ordem do mais pequeno para o maior.-->
+        <source media="(max-width:750px )" srcset="../../../Programas/HTML-CSS/Images/Ex.11/Small.png">
+        <source media="(max-width:1050px )" srcset="../../../Programas/HTML-CSS/Images/Ex.11/Medium.png">
+        <img src="../../../Programas/HTML-CSS/Images/Ex.11/Grande.png" alt="imagem flexivel">
+    </picture>
+    <!---->
+    <h1>Audio</h1>
+    <p>Vamos adicionar um aúdio</p>
+    <a href="../../../../../Downloads/Straight Fuse - French Fuse.mp3" type="blank">Download</a><br>
+    <audio preload="auto" controls loop><!--PRELOAD faz um carregamento previo, CONTROLS mostra os controlos play,pause,etc.. , LOOP faz a música repetir quando chega ao final-->
+        <source src="../../../../../Downloads/Straight Fuse - French Fuse.mp3" type="audio/mp3">
+        <source src="../../../../../Downloads/yt5s.com - Le Pacifiques (320 kbps).mp3" type="audio/mp3">  
+    </audio>
+</body>
+</html>
