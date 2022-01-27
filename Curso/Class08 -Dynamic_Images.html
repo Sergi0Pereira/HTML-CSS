@@ -15,19 +15,42 @@
     <h1>Imagens Dinamicas</h1>
     <p>Aumenta ou diminui o tamanho das imagens consoante o dispositivo utilizado e/ou o zoom aplicado, no navegador.</p>
     <picture>
-        <!--Picture para se conseguir chamar várias imagens , consoante a resoluçao pretendida.
-        As sources devem obedecer uma ordem do mais pequeno para o maior.-->
+
+    <!--Picture para se conseguir chamar várias imagens , consoante a resoluçao pretendida.
+    As sources devem obedecer uma ordem do mais pequeno para o maior.-->
+
         <source media="(max-width:750px )" srcset="../../../Programas/HTML-CSS/Images/Ex.11/Small.png">
         <source media="(max-width:1050px )" srcset="../../../Programas/HTML-CSS/Images/Ex.11/Medium.png">
         <img src="../../../Programas/HTML-CSS/Images/Ex.11/Grande.png" alt="imagem flexivel">
     </picture>
-    <!---->
+   
+    <!--Formatos suportados sao wave,mp3 e ogg-->
+
     <h1>Audio</h1>
     <p>Vamos adicionar um aúdio</p>
-    <a href="../../../../../Downloads/Straight Fuse - French Fuse.mp3" type="blank">Download</a><br>
-    <audio preload="auto" controls loop><!--PRELOAD faz um carregamento previo, CONTROLS mostra os controlos play,pause,etc.. , LOOP faz a música repetir quando chega ao final-->
-        <source src="../../../../../Downloads/Straight Fuse - French Fuse.mp3" type="audio/mp3">
-        <source src="../../../../../Downloads/yt5s.com - Le Pacifiques (320 kbps).mp3" type="audio/mp3">  
+    <audio preload="auto" controls loop>
+
+    <!--PRELOAD faz um carregamento previo, CONTROLS mostra os controlos play,pause,etc.. , LOOP faz a música repetir quando chega ao final-->
+
+    <source src="../Music/Straight Fuse - French Fuse.mp3" type="audio/mp3">  
+    <source src="../Music/yt5s.com - Le Pacifique (320 kbps).mp3" type="audio/mp3">
     </audio>
+    <br>
+    <a href="../Music/Straight Fuse - French Fuse.mp3" target="blank">Download</a><br>
+    <br>
+
+    <!-- Devem-se colocar diversos formatos de imagem e video para cobrir todas as compatibilidades dos navegadores-->
+
+    <h1>Video</h1>
+    <p>Vamos adicionar um vídeo</p>
+    
+    <video width="1000" poster="../Images/industria-club-club-porto-xceed-2.jpg" controls loop>
+        <source src="../Videos/Disco.m4v" type="video/mp4">
+        <source src="../Videos/video.mp4" type="video/mp4">
+        <source src="../Videos/Video.webm" type="video/webm">
+        <source src="../Videos/Disco.ogv" type="video/ogv">
+        <p>O seu Navegador nao suporta este formato de video.</p>
+        
+    </video>
 </body>
 </html>
