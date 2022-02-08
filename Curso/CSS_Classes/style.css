@@ -1,5 +1,30 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merienda:wght@700&display=swap');
+/*Aqui estao duas formas de adicionar uma fonte externa:~
+1º - Acima através de importaçao de um url do googlefonts por exemplo
+2º - Abaixo através de importaçao de um ficheiro ttf, através do comando @font-face*/
+@font-face {
+    font-family: 'budmo';
+    src: url('Fonts/budmo/budmo\ jiggler.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   
+}
+@font-face {
+    font-family: 'romantice';
+    src: url('Fonts/ROMANTICE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'assinatura';
+    src: url(Fonts/The\ Philadelphia\ Story.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
 *{
     max-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,40 +32,49 @@
 
 body{
 
-    background-image: linear-gradient(to right,#113059,#26528cb3);
-    /*Define uma imagem de fundo que pode ser um gradiente de combinaçao de formas e cores;*/
+background-image: linear-gradient(to right,#113059,#26528cb3);
+/*Define uma imagem de fundo que pode ser um gradiente de combinaçao de formas e cores;*/
 }
+
 main{
-    background-color: #ffff;
+    background-color: #ffff; /* cor de fundo*/
     width: 600px; /*Largura do bloco main*/
     padding: 10px; /* Espaçamentos antes e depois do texto*/
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 3px #1630539e;
+    margin: auto; /* Definaçao do tamanho das margens. Em auto, centraliza a caixade texto.*/
+    border-radius: 10px;/* Rebordo das pontas da caixa de texto*/
+    box-shadow: 5px 5px 3px #1630539e; /*Sombra da caixa de texto*/
 }
+
 h1{
     color: #26528C;
     text-align: center;
-    text-shadow: 1px 1px 2px #1126429c;
-    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 4px #1126429c;
+    font-family:'Dancing script', cursive; /* Uso da fonte descarregada e colocada na @font-face*/
+    font-size: 40px;
 }
+
 h2{
     color: #113059;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Dancing Script', cursive; /* Uso da fonte importada através da url do googlefonts*/
+    font-size: 30px;
 }
 
 p{
-    /* text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px; Usa-se em ou px(1em=16px (medida padrao) - recomendaçao w3c
-    
-    Utiliza-se uma comando shorthand para condensar todas as características de uma fonte numa única linha
-
+    text-align: justify;
+    font-family:'Merienda', cursive; /* Uso da fonte importada através da url do googlefonts*/
+    font-size: 17px;
+    font-weight: bolder;
+    /* Usa-se em ou px(1em=16px (medida padrao) - recomendaçao w3c.
+    Utiliza-se um comando shorthand para condensar todas as características de uma fonte numa única linha.
     shorthand font deverá respeitar a seguinte ordem:
-
-    - font: font-style -> font-weight -> font-size -> font-family;
+    - font: font-style -> font-weight -> font-size -> font-family;*/
+   /* font: italic bold 17px Arial,'Quintessential', cursive;*/
+}
+.pass{
+    text-align: right;
+    font-size: 17px;
+    font-style: italic;
+    padding-right: 15px;
+    font-weight: lighter;
     
-    */
-    font: italic normal 15.3px Arial,Helvetic,sans-serif;
-
 }
