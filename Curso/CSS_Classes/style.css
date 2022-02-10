@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-/*Aqui estao duas formas de adicionar uma fonte externa:~
-1º - Acima através de importaçao de um url do googlefonts por exemplo
+/*Aqui estao duas formas de adicionar uma fonte externa:
+1º - Acima através de importaçao de um url do googlefonts
 2º - Abaixo através de importaçao de um ficheiro ttf, através do comando @font-face*/
 @font-face {
     font-family: 'budmo';
@@ -41,7 +41,7 @@ main{
     background-color: #ffff; /* cor de fundo*/
     width: 600px; /*Largura do bloco main*/
     padding: 10px; /* Espaçamentos antes e depois do texto*/
-    margin: auto; /* Definaçao do tamanho das margens. Em auto, centraliza a caixade texto.*/
+    margin: auto; /* Definaçao do tamanho das margens. Em auto, centraliza a caixa de texto.*/
     border-radius: 10px;/* Rebordo das pontas da caixa de texto*/
     box-shadow: 5px 5px 3px #1630539e; /*Sombra da caixa de texto*/
 }
@@ -50,13 +50,13 @@ h1{
     color: #26528C;
     text-align: center;
     text-shadow: 1px 1px 4px #1126429c;
-    font-family:'Dancing script', cursive; 
+    font-family:'Dancing script', cursive; /* Uso da fonte importada através da url do googlefonts*/
     font-size: 40px;
 }
 
 h2{
     color: #113059;
-    font-family: 'Dancing Script', cursive; /* Uso da fonte importada através da url do googlefonts*/
+    font-family: 'Dancing Script', cursive; 
     font-size: 30px;
 }
 

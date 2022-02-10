@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* Em HTML id= em CSS é #
+Em HTML class= em CSS é .*/
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 25px;
+}
+
+h2#titulo{
+    font-size: 35px;
+}
+p{
+    text-indent: 10px; /*Coloca avanço no paragrafo*/
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+p#pequeno{
+    background-color: rgba(158, 241, 241, 0.313);
+    text-indent: 30px; /*Coloca avanço no paragrafo*/
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}   
+
+p#medio{
+    background-color: blanchedalmond;
+    text-indent: 20px; /*Coloca avanço no paragrafo*/
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}   
+
+p#grande{
+    background-image: linear-gradient(to bottom,#aad5359c,#5b4820);
+    border-radius: 10px;
+    text-indent: 10px; /*Coloca avanço no paragrafo*/
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}   
+.basico{
+    background-color: rgba(158, 241, 241, 0.313);
+    text-indent: 30px; /*Coloca avanço no paragrafo*/
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.medio{
+    background-color: blanchedalmond;
+    text-indent: 20px; /*Coloca avanço no paragrafo*/
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}   
+
+.grande{
+    background-image: linear-gradient(to bottom,#aad5359c,#5b4820);
+    border-radius: 10px;
+    text-indent: 10px; /*Coloca avanço no paragrafo*/
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.realce{
+    font-size: 40px;
+    font-weight: bold;
+}
+
