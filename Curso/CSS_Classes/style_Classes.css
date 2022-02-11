@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
-/* Em HTML id= em CSS é #
-Em HTML class= em CSS é .*/
-
+/* Em HTML é id="xpto" (id) em CSS é #
+Em HTML class="xpto" (Possiblidade de chamar mais de uma classe) em CSS é .xpto  */
+body{
+    background-image: linear-gradient(to right,#69341c84, #3d530a84 );
+}
 h1{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -19,15 +21,22 @@ p{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
+hr.bredit{
+    background-color: #69341c84;
+    height: 5px;
+}
+
+/*Id´s*/
+
 p#pequeno{
-    background-color: rgba(158, 241, 241, 0.313);
+    background-color: rgba(158, 241, 241, 0);
     text-indent: 30px; /*Coloca avanço no paragrafo*/
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
 }   
 
 p#medio{
-    background-color: blanchedalmond;
+    background-color: #50c67b0c;
     text-indent: 20px; /*Coloca avanço no paragrafo*/
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -40,8 +49,11 @@ p#grande{
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
 }   
+
+/* Classes*/
+
 .basico{
-    background-color: rgba(158, 241, 241, 0.313);
+    background-color: rgba(158, 241, 241, 0.054);
     text-indent: 30px; /*Coloca avanço no paragrafo*/
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
@@ -52,9 +64,8 @@ p#grande{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }   
-
 .grande{
-    background-image: linear-gradient(to bottom,#aad5359c,#5b4820);
+    background-image: linear-gradient(to bottom,#aad53511,#5b482015);
     border-radius: 10px;
     text-indent: 10px; /*Coloca avanço no paragrafo*/
     font-size: 25px;

@@ -20,11 +20,9 @@
 }
 @font-face {
     font-family: 'assinatura';
-    src: url(Fonts/The\ Philadelphia\ Story.ttf) format('truetype');
+    src: url('Fonts/The\ Philadelphia\ Story.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
- 
-
 }
 *{
     max-height: 100%;
@@ -33,7 +31,7 @@
 
 body{
 
-background-image: linear-gradient(to right,#113059,#26528cb3);
+background-image:radial-gradient(#113059e7,#26528cb3,white);
 /*Define uma imagem de fundo que pode ser um gradiente de combinaçao de formas e cores;*/
 }
 
@@ -62,8 +60,8 @@ h2{
 
 p{
     text-align: justify;
-    font-family:'Fira Sans', sans-serif
-    ; /* Uso da fonte importada através da url do googlefonts*/
+    font-family:'Fira Sans', sans-serif;
+    /* Uso da fonte importada através da url do googlefonts*/
     font-size: 17px;
     font-weight: bolder;
     /* Usa-se em ou px(1em=16px (medida padrao) - recomendaçao w3c.
