@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Em HTML é id="xpto" (id) em CSS é #
+/* Em HTML id="xpto" (id) em CSS é #
 Em HTML class="xpto" (Possiblidade de chamar mais de uma classe) em CSS é .xpto  */
 body{
     background-image: linear-gradient(to right,#69341c84, #3d530a84 );
@@ -21,7 +21,7 @@ p{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
-hr.bredit{
+.bredit{
     background-color: #69341c84;
     height: 5px;
 }
