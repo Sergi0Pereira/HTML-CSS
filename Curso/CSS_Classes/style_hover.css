@@ -1,10 +1,13 @@
 @charset "UTF-8";
-#center{
+#center{ /* id criado para o body */
+    background-image:linear-gradient(to left,rgb(98, 98, 98),rgba(0, 0, 0, 0.877));
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
 }
 div {
+    
     display: inline-block;
-    background-color: darkgrey;
     border: 1px solid black;
     text-align: center; 
     height: 200px;

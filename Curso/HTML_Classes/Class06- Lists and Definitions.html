@@ -6,6 +6,16 @@
     <title>Listas</title>
 </head>
 <style>
+
+    body{
+        background-image:radial-gradient(rgba(206, 80, 164, 0.741),rgba(88, 47, 9, 0.836));
+    }
+    .titulo{
+        background-image:-o-linear-gradient(to right,white,rgba(196, 93, 25, 0.326));
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        text-align: center;
+    }
     ol{
         font-family: 'Times New Roman', Times, serif;
         font-size: large;
@@ -17,8 +27,15 @@
         font-size: large;
         list-style-type:disc;
     }
+    .armenian{
+        list-style-type: armenian;
+    }
 </style>
 <body>
+   
+    <h1 class="titulo">Teoria Aplicada</h1>
+    <p class="titulo">Olá! Seja Bem-Vindo!</p>
+    <p><img title="Olá!!!" src="../Images/eu.jpg" alt="Olá"></p>
 <h1>Listas</h1>
 <h2>Listas Ordenadas</h2>(ol/li)
 <ol type="A"> 
@@ -41,14 +58,14 @@
 <h2>Exemplo de Listas Misturadas</h2>
 <ol>
     <li>Os meus clubes favoritos</li>(ul-li)
-        <ul>
+        <ul class="armenian">
             <li>FCP</li>
             <li>FCP</li>
             <li>FCP</li>
             <ol start="
             2">
                 <li>Os meus jogadores favoritos do FCP</li>(ol start-li)
-                <ol>
+                <ol style="list-style-type:decimal-leading-zero;"> <!--definicao do estilo da lista.Os icones a serem utilizados ou nao.-->
                     <li>Luiz Diaz</li>
                     <li>Pepe</li>
                     <li>Otávio</li>
