@@ -16,8 +16,22 @@ div {
 div > p1{
     display: none;
 }
+div > p2{
+    display: none;
+}
+div > p3{
+    display: none;
+}
 
 div:hover > p1{
+    display:block;
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 200PX;
+    height: 50PX;
+}
+div:hover > p2{
     display:block;
     text-align: center;
     background-color: white;
