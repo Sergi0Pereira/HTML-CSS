@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens e Mapeamento</title>
+</head>
+<!--
+    alt - nome alternativo à imagem
+    usemap - Utiliza a imagem como um mapa
+    map - define o mapa
+    area shape coords href title - define uma área na imagem com a forma do shape
+-->
+<body>
+    <h2>Imagens e Mapeamento</h2>
+        <img src="img/milakunis.jpg" alt="Mila Kunis" usemap="#mila">
+        <map id="mila" name="mila">
+            <area shape="circle" coords="280,144,10" href="https://www.imdb.com/name/nm0005109/" alt="Olho Esquerdo Mila Kunis" title="Olho Esquerdo Mila Kunis">
+            <area shape="circle" coords="347,138,10" href="https://www.imdb.com/name/nm0005109/" alt="Olho Direito Mila Kunis" title="Olho Direito Mila Kuni">
+            <area shape="circle" coords="325,219,10" href="https://www.imdb.com/name/nm0005109/"  alt="Boca Mila Kunis" title="Boca Mila Kunis">
+        </map>    
+</body>
+</html>
