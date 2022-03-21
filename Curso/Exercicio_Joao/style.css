@@ -2,20 +2,25 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: green;
+  
     
 }
 
 .hamburger, #hamburger{
     display: none;
+    
+    
 }
 
 body header {
-    background-color: #046DD5;
-    color: white;
+    background-color: #ffffff;
+    width: 600px;
+    color: rgb(146, 5, 5);
     text-decoration: none;
-    margin: 1em;
-    padding: 1em;
-   
+    position:relative;
+    left: 700px;
+
+
 }
 
 #news article header{
