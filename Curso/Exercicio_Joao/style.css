@@ -2,14 +2,11 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: green;
-  
-    
 }
 
-.hamburger, #hamburger{
+.hamburger,
+#hamburger {
     display: none;
-    
-    
 }
 
 body header {
@@ -17,34 +14,30 @@ body header {
     width: 600px;
     color: rgb(146, 5, 5);
     text-decoration: none;
-    position:relative;
+    position: relative;
     left: 700px;
-
-
 }
 
-#news article header{
+#news article header {
     background-color: red;
-    margin: 0; 
-    padding: 0;  
+    margin: 0;
+    padding: 0;
 }
 
-#news article p{
+#news article p {
     background-color: white;
-    margin: 1em; 
+    margin: 1em;
     padding: 1em;
 }
-
-
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: white;
-  }
+}
 
-li{
+li {
     display: block;
     border-top-style: solid;
     border-top-color: red;
@@ -54,7 +47,6 @@ li{
     text-align: center;
     list-style-type: none;
     padding: 1em;
-    
 }
 
 #related {
@@ -62,7 +54,7 @@ li{
     padding: 1em;
     margin: 1em;
     background-color: #2A2F33;
-    color: white; 
+    color: white;
     width: auto;
 }
 
@@ -90,15 +82,16 @@ footer {
     margin: 0;
 }
 
-  .author,  .tags,  .date,  .comments {
+.author,
+.tags,
+.date,
+.comments {
     background-color: #F4655F;
-    color: white; 
+    color: white;
     text-decoration: none;
     text-align: left;
     padding: 1em;
     margin: 1em;
-    
-    
 }
 
 footer p {
@@ -108,17 +101,14 @@ footer p {
     color: white;
 }
 
-
 img {
-
     height: auto;
     display: block;
     width: 100%;
- 
 }
 
-article header h1 a{
-    position: absolute; 
+article header h1 a {
+    position: absolute;
     text-align: left;
     text-decoration: none;
     text-shadow: 5px 5px 5px black;
