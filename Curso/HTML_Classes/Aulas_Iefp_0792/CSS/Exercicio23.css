@@ -2,15 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: #565656b6;
 }
 
 .titulo {
     font-family: monospace;
     font-size: 100px;
     text-align: center;
-    margin: 50px;
+    margin: 40px;
     border: 30px double rgb(12, 12, 113);
-    outline: 50px dashed rgb(37, 62, 88);
+    outline: 40px dashed rgb(37, 62, 88);
     background-color: darkgray;
 }
 
@@ -24,25 +31,26 @@
     text-align: justify;
     margin-left: 300px;
     margin-right: 300px;
+    margin-bottom: 0%;
     padding: 30px;
     background-color: whitesmoke;
 }
 
-body {
-    padding: 0%;
-    margin: 0%;
-    min-height: 100vh;
-    min-width: 100vh;
-    background-color: #565656b6;
+.doisconteudo {
+    
+    background-color: white;
+    margin-left: 300px;
+    margin-right: 300px;
+
 }
 
 .quadrado {
+    position: relative;
     border: 20px solid black;
     width: 550px;
     height: 540px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 110px;
 }
 
 div {
