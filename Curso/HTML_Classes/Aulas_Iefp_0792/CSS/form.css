@@ -1,4 +1,4 @@
-*{
+* {
     padding: 2px;
     margin: 0%;
     margin-bottom: 3px;
@@ -6,57 +6,68 @@
     font-size: 14px;
 }
 
-body{
+body {
     background-color: #86615c90;
-
 }
 
-::placeholder{
+::placeholder {
     color: rgba(0, 0, 0, 0.735);
-} 
+}
 
-
-.centrar{
+.centrar {
     border: 10px double #c7e4ee46;
     outline: 5px solid #8b728e9b;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-
+    border-radius: 10px;
+    background-color: #3b25210c;
 }
-input{
+
+input {
     border: 2px solid #8b728e13;
     padding: 5px;
     margin-left: 1px;
     background-color: #8b728e9b;
-
 }
 
-h2{
+input[type="submit"]:hover {
+    background-color: #5A616E;
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: #5A616E;
+    color: white;
+}
+
+h2 {
     text-align: center;
+    font-family:'Times New Roman', Times, serif;
     font-size: 30px;
+    font-style: oblique;
     color: rgba(0, 0, 0, 0.735);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
     margin-top: 20px;
     width: fit-content;
-    border: 5px solid #8b728e9b;;
-    background-color: #c7e4ee46;
-    padding: 8px;
-    
-
+    border: 5px solid #8b728e9b;
+    background-color: #C7B0AD;
+    padding: 20px;
+    border-radius: 50%;
 }
 
-.espaço{
+.espaço {
     margin-left: 10px;
 }
 
-.letrapequena{
-
+.letrapequena {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 13.5px;
     font-style: italic;
-    
+}
+.esp_linhas {
+    line-height: 10px;
 }

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://web.fe.up.pt/~arestivo/page/exercises/css/ -->
+<html lang="en-US" wtx-context="1861F15D-DF5D-4F9C-9210-D938220314F4"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./André Restivo_files/style.css">
+    <link rel="stylesheet" href="./André Restivo_files/code.css">
+    <link rel="icon" type="image/ico" href="https://web.fe.up.pt/~arestivo/page/favicon.ico">
+    <title>André Restivo</title>
+  </head>
+  <body cz-shortcut-listen="true">
+    <header>
+      <h1><a href="https://web.fe.up.pt/~arestivo/page/">André Restivo</a></h1>
+      
+      <ul id="crumbs">
+        <li><a href="https://web.fe.up.pt/~arestivo/page/">home</a></li>
+        <li>
+          exercises
+        </li>
+        <li>
+          <a href="https://web.fe.up.pt/~arestivo/page/exercises/css/">css</a>
+        </li>
+      </ul>
+      
+    </header>
+  <main>
+    <h2 id="css-exercises">CSS Exercises</h2>
+<h3 id="1-online-newspaper-design">1. Online Newspaper Design</h3>
+<ul>
+<li>Unzip the following file into some folder: <a href="https://web.fe.up.pt/~arestivo/page/exercises/css/news/news.zip">news.zip</a></li>
+<li>You should have now 4 files: <strong>index.html</strong> (the main page of an online newspaper), <strong>item.html</strong> (a page representing a single article with comments), <strong>register.html</strong> and <strong>login.html</strong> (pages for users to register and login).</li>
+<li>Analyze the structure of these files.</li>
+<li>As you might have noticed, all pages reference 5 css files: <strong>style.css</strong> (styling the main components), <strong>layout.css</strong> (positioning the main components), <strong>responsive.css</strong> (making the page responsive), <strong>comments.css</strong> (design for the comments section) and <strong>register.css</strong> (design for the login and register forms).</li>
+<li><strong>Without changing</strong> the HTML files, try recreating a design by following these <strong>five</strong> steps:</li>
+</ul>
+<h4 id="11-main-style">1.1 Main Style</h4>
+<p>We will start by designing the main components of the main page without worrying about the positioning of any elements (<strong>style.css</strong>). The final result should be <a href="https://web.fe.up.pt/~arestivo/page/exercises/css/news/style.html">this</a>.</p>
+<p><strong>Take notice that</strong>:</p>
+<ul>
+<li>The green background is <strong>not</strong> part of the design. The site should occupy the whole width of the browser.</li>
+<li>It's not noticeable on the screenshot, but section links should change their background color to #2A2F33 and their text color to white when the mouse is over them.</li>
+</ul>
+<p><strong>Some helper values:</strong></p>
+<ul>
+<li>Main colors used: #2A2F33, #046DD5 and #F4655F.</li>
+<li>Section colors: #E1493E, #8ABA56, #5B4282, #FF8932,#19B6E9 and #E84C8B.</li>
+<li>Fonts used: <a href="https://fonts.google.com/specimen/Lora">Lora</a> and <a href="https://fonts.google.com/specimen/Poppins">Poppins</a>.</li>
+<li>Most paddings and margins are <em>1em</em>.</li>
+</ul>
+<div class="notice info"><strong>Info</strong>: Lora and Poppins are not web-safe fonts; most people won't have them installed in their browsers. But we can still use them by adding this line into our CSS file thanks to <a href="https://fonts.google.com/">Google Fonts</a></div>
+
+<pre><code class="language-css"><span class="hljs-keyword">@import</span> url(<span class="hljs-string">'https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:300,200'</span>);
+</code></pre>
+<div class="notice info"><strong>Info</strong>: You may have noticed that the <em>nav</em> section contains an <em>input</em> and a <em>label</em>. These are just to be used in <em>exercise 1.3</em>. You can start by hiding them using CSS for now (with 'display: none').</div>
+
+<p><strong>What did I learn:</strong></p>
+<ul>
+<li>How to use <strong>CSS selectors</strong> to select specific parts of an HTML file for styling.</li>
+<li>How to apply <strong>basic styling</strong> to HTML elements.</li>
+<li>How to <strong>import fonts</strong> so that we can use more than the web-safe fonts.</li>
+<li>How to use <strong>pseudo-classes</strong> to select elements based on an element state.</li>
+<li>How to <strong>hide</strong> elements using CSS.</li>
+</ul>
+<h4 id="12-positioning">1.2 Positioning</h4>
+<p>We will position the elements in their proper places (<strong>layout.css</strong>). The final result should be <a href="https://web.fe.up.pt/~arestivo/page/exercises/css/news/layout.html">this</a>.</p>
+<p><strong>Some helper values</strong>:</p>
+<ul>
+<li>The background color is #EDEFF0.</li>
+<li>The width of the page is <em>60em</em>.</li>
+<li>The sidebar occupies 1/5 of the total width.</li>
+</ul>
+<div class="notice info"><strong>Tip:</strong> Use a <em>flexbox</em> for the menu and a <em>grid</em> to position the elements on the page.</div>
+
+<p><strong>What did I learn:</strong></p>
+<ul>
+<li>How to use <strong>CSS grids</strong> to position elements in a webpage.</li>
+<li>How to use <strong>CSS flexboxes</strong> to position elements in a container.</li>
+</ul>
+<h4 id="13-responsive-design">1.3 Responsive Design</h4>
+<p>Now we make the design responsive by establishing two breaking points (<strong>responsive.css</strong>):</p>
+<ul>
+<li>When the width of the window reaches <strong>60em</strong>, the sidebar should disappear and the page should occupy the full width (<em>100%</em>) of the window. The final result should be <a href="https://web.fe.up.pt/~arestivo/page/exercises/css/news/tablet.html">this</a>.</li>
+<li>When the width of the window reaches <strong>30em</strong>, the menu should collapse into a pull-down menu, the subtitle should not be shown and each news item title should be moved to above the item image. The final result should be <a href="https://web.fe.up.pt/~arestivo/page/exercises/css/news/phone.html">this</a>.</li>
+</ul>
+<p><strong>Some helper values</strong>:</p>
+<ul>
+<li>Characters for the hamburger menu: <em>\2630</em> (☰) and <em>\2715</em> (✕).</li>
+</ul>
+<div class="notice info"><strong>Tip:</strong> Start by making the menu without any animations (using display to hide and show the menu items). After that, try using <em>transitions</em> to change the height of each menu item instead.</div>
+
+<p><strong>What did I learn:</strong></p>
+<ul>
+<li>How to use <strong>media queries</strong> to specify CSS rules for specific screen widths.</li>
+<li>How to use a <strong>hidden checkbox</strong> to save state in CSS.</li>
+<li>How to <strong>add content</strong> to elements using the after pseudo-element.</li>
+<li>How to <strong>transitions</strong> to create smooth animations in CSS.</li>
+</ul>
+<h4 id="14-comments-design">1.4 Comments Design</h4>
+<p>Add CSS rules (<strong>comments.css</strong>) to create the design for the comment section that can be seen on the <strong>item.html</strong> page. The final result should be <a href="https://web.fe.up.pt/~arestivo/page/exercises/css/news/comments.html">this</a>.</p>
+<p><strong>Some helper values</strong>:</p>
+<ul>
+<li>Quote character for each comment: <em>\201C</em> (“).</li>
+</ul>
+<div class="notice info"><strong>Tip:</strong> Use a <em>grid</em> for the comment <em>form</em> design.</div>
+
+<p><strong>What did I learn:</strong></p>
+<ul>
+<li>How to use <strong>grids</strong> to design forms.</li>
+</ul>
+<h4 id="15-register-design">1.5 Register Design</h4>
+<p>Add CSS rules (<strong>register.css</strong>) to create the design for the register and login forms that can be seen in the <strong>register.html</strong> and <strong>login.html</strong> pages. The final result should be <a href="https://web.fe.up.pt/~arestivo/page/exercises/css/news/register.html">this</a>.</p>
+<p>Make sure that the form fills the content area in smaller screens like <a href="https://web.fe.up.pt/~arestivo/page/exercises/css/news/register-phone.html">this</a>.</p>
+<p><strong>What did I learn:</strong></p>
+<ul>
+<li>How to use <strong>grids</strong> to design forms.</li>
+<li>How to use generic selectors to not repeat myself.</li>
+</ul>
+<h3 id="2-no-flexboxgrid-design">2. No Flexbox/Grid Design</h3>
+<p><strong>Without</strong> using the <em>flexbox</em> and <em>grid</em> CSS layouts, try to recreate some designs.</p>
+<ul>
+<li>Unzip the following file into some folder: <a href="https://web.fe.up.pt/~arestivo/page/exercises/css/blocks/blocks.zip">blocks.zip</a>.</li>
+<li>Inside the <em>zip</em> you will find an <em>index.html</em> file and a <em>base.css</em> file. These have the structure of the website and some base design. You should not change these files.</li>
+<li>Try to recreate each one of the following designs, without using <em>flexbox</em> or <em>grid</em>, inside the <em>style.css</em> file:<ul>
+<li><a href="https://web.fe.up.pt/~arestivo/page/exercises/css/blocks/style1.html">Style 1</a></li>
+<li><a href="https://web.fe.up.pt/~arestivo/page/exercises/css/blocks/style2.html">Style 2</a></li>
+<li><a href="https://web.fe.up.pt/~arestivo/page/exercises/css/blocks/style3.html">Style 3</a></li>
+<li><a href="https://web.fe.up.pt/~arestivo/page/exercises/css/blocks/style4.html">Style 4</a></li>
+</ul>
+</li>
+</ul>
+<div class="notice info"><strong>Extra:</strong> Now try the same exercises, this time <strong>using</strong> flexbox and grid layouts.</div>
+
+<p><strong>What did I learn:</strong></p>
+<ul>
+<li>How to position, float and clear to create complex CSS designs.</li>
+<li>How much easier it is to use grid and flexbox.</li>
+</ul>
+<h3 id="3-cascading">3. Cascading</h3>
+<p>Consider the following HTML code:</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"foo"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bar"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"first"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>A<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"second"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>B<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>C<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>D<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+</code></pre>
+<p>And the following CSS rules:</p>
+<pre><code class="language-css"><span class="hljs-selector-tag">section</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span>               { <span class="hljs-attribute">color</span> : green }    <span class="hljs-comment">/*R1*/</span>
+<span class="hljs-selector-class">.bar</span> <span class="hljs-selector-class">.second</span>                { <span class="hljs-attribute">color</span> : red }      <span class="hljs-comment">/*R2*/</span>
+<span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span>                        { <span class="hljs-attribute">color</span> : cyan }     <span class="hljs-comment">/*R3*/</span>
+<span class="hljs-selector-tag">section</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:first</span>-child ~ <span class="hljs-selector-tag">li</span> { <span class="hljs-attribute">color</span> : yellow }   <span class="hljs-comment">/*R4*/</span>
+<span class="hljs-selector-id">#foo</span> <span class="hljs-selector-class">.bar</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-pseudo">:first</span>-child   { <span class="hljs-attribute">color</span> : inherit }  <span class="hljs-comment">/*R5*/</span>
+<span class="hljs-selector-class">.bar</span> <span class="hljs-selector-tag">li</span>                     { <span class="hljs-attribute">color</span> : magenta }  <span class="hljs-comment">/*R6*/</span>
+</code></pre>
+<div class="notice warning">During this exercise, <strong>don't try this code in the browser</strong> until the end.</div>
+
+<h4 id="31-specificity">3.1 Specificity</h4>
+<ol>
+<li>Without using a specificity calculator, calculate the specificity of each rule.</li>
+<li><strong>In the end</strong>, <a href="https://specificity.keegan.st/">verify</a> if you got it right.</li>
+</ol>
+<h4 id="32-rules">3.2 Rules</h4>
+<p>What rules apply to each of the elements:</p>
+<ol>
+<li>section with id foo:</li>
+<li>ul with class bar:</li>
+<li>first list item:</li>
+<li>second list item:</li>
+<li>third list item:</li>
+<li>fourth list item:</li>
+</ol>
+<h4 id="33-selected-rule">3.3 Selected Rule</h4>
+<p>What is the rule with the highest specificity for each element:</p>
+<ol>
+<li>section with id foo:</li>
+<li>ul with class bar:</li>
+<li>first list item:</li>
+<li>second list item:</li>
+<li>third list item:</li>
+<li>fourth list item:</li>
+<li>first link:</li>
+<li>second link:</li>
+<li>third link:</li>
+<li>fourth link:</li>
+</ol>
+<h4 id="34-color-value">3.4 Color Value</h4>
+<p>What is the color value (including inherit) assigned to each element:</p>
+<ol>
+<li>section with id foo:</li>
+<li>ul with class bar:</li>
+<li>first list item:</li>
+<li>second list item:</li>
+<li>third list item:</li>
+<li>fourth list item:</li>
+<li>first link:</li>
+<li>second link:</li>
+<li>third link:</li>
+<li>fourth link:</li>
+</ol>
+<h4 id="35-final-color">3.5 Final Color</h4>
+<p>What is the <strong>final color value</strong> presented in the browser:</p>
+<ol>
+<li>first link:</li>
+<li>second link:</li>
+<li>third link:</li>
+<li>fourth link:</li>
+</ol>
+<h3 id="4-extra">4. Extra</h3>
+<p>Let's continue exercise <a href="https://web.fe.up.pt/~arestivo/page/exercises/html/#5-extra">5. Extra</a>:</p>
+<ol>
+<li>Pick a page from a website you use a lot.</li>
+<li>Without looking at its HTML code, try writing your own version using good HTML semantics.</li>
+<li><a href="https://validator.w3.org/">Validate</a> the HTML code.</li>
+<li>Using CSS, create a design for that page.</li>
+<li>Make sure the design works in devices of different sizes.</li>
+<li><a href="https://jigsaw.w3.org/css-validator/">Validate</a> your CSS code.</li>
+</ol>
+
+  </main>
+  <footer>
+    Created using <a href="https://www.npmjs.com/package/sitory">Sitory</a>. Copyright 2022 André Restivo.
+  </footer>
+  
+</body></html>

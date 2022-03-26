@@ -1,5 +1,6 @@
+
 body {
-    margin: 0px;
+    margin: 0% auto;
     padding: 0px;
     background-color: green;
 }
@@ -10,12 +11,18 @@ body {
 }
 
 body header {
+    position: static;
     background-color: #ffffff;
-    width: 600px;
-    color: rgb(146, 5, 5);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: white;
     text-decoration: none;
-    position: relative;
-    left: 700px;
+    
+    
+ 
 }
 
 #news article header {
@@ -25,14 +32,19 @@ body header {
 }
 
 #news article p {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 1em;
     padding: 1em;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
+    width: 90%;
+    height: 100%;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
     padding: 0;
     background-color: white;
 }
