@@ -11,70 +11,113 @@ body {
 }
 
 body header {
-    position: static;
-    background-color: #ffffff;
-    width: 90%;
+    box-sizing: border-box;
+    background-color: #056DD5;
+    max-width: 60%;
+    height: 140px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0%;
     margin-bottom: 0%;
     color: white;
     text-decoration: none;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 100%;
+    border-top:8px solid white;
+    border-left: 8px solid white;
+    border-right: 8px solid white; 
+    border-bottom: none;
+    
     
     
  
 }
 
 #news article header {
-    background-color: red;
+    position: relative;
+    position:fixed;
     margin: 0;
     padding: 0;
 }
 
 #news article p {
+    box-sizing: border-box;
+    max-width: 60%;
+    height: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
     background-color: rgb(255, 255, 255);
     margin: 1em;
-    padding: 1em;
+    padding-left: 1em;
+    
 }
 
 ul {
+    box-sizing: border-box;
     list-style-type: none;
-    width: 90%;
+    width: 60%;
     height: 100%;
     margin-top: 0%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
+    margin-bottom: 0%;
     padding: 0;
     background-color: white;
 }
 
 li {
+    position: relative;
+    box-sizing: border-box;
     display: block;
+    width: 96.4%;
     border-top-style: solid;
     border-top-color: red;
-    margin: 1em;
+    font-family: Poppins;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 17px;
     color: black;
+    
     background-color: white;
     text-align: center;
     list-style-type: none;
-    padding: 1em;
+    padding: 1.2em;
 }
 
 #related {
-    font-family: "Arial";
+    box-sizing: border-box;
+    border-left: 8px solid white;
+    border-right: 8px solid white; 
+    border-bottom: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    font-family: Poppins;
+    font-size: 16.4px;
+    line-height: 22.5px;
     padding: 1em;
-    margin: 1em;
+    padding-bottom: 1.0em;
     background-color: #2A2F33;
     color: white;
-    width: auto;
+    
+    
 }
 
 #news article {
+    box-sizing: border-box;
+    border-left: 8px solid white;
+    border-right: 8px solid white; 
+    border-bottom: none;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 92%;
     font-family: "Arial";
     padding: 1em;
-    margin: 1em;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 @font-face {
@@ -83,9 +126,10 @@ li {
 }
 
 #signup {
+    box-sizing: border-box;
     text-align: left;
-    padding: 1em;
-    margin: 1em;
+    word-spacing: 30px;
+    
     color: white;
 }
 
@@ -113,19 +157,27 @@ footer p {
     color: white;
 }
 
-img {
+ img  {
+    position: relative;
+    width: 100%;
     height: auto;
     display: block;
-    width: 100%;
+    
+   
+    
+  
+   
 }
 
 article header h1 a {
     position: absolute;
+    top: 10px;
+    left: 10px;
     text-align: left;
     text-decoration: none;
     text-shadow: 5px 5px 5px black;
     font-size: 30px;
     padding: 20px;
     width: 10em;
-    color: white;
+    color: rgb(0, 0, 0);
 }

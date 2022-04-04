@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="Exercicio25.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciacao ao JavaScript</title>
+</head>
+<body>
+    <button  type="button" onclick="alert('Seja, Bem-Vindo!')" > Nao Clicar!!</button>
+    <p id="aqui"></p>
+    <p id="aqui2"></p>
+    <p id="aqui3"></p>
+    <p id="aqui4"></p>
+
+    <script>
+        
+        let x,y,z;
+        x= "x".charCodeAt(0); // transformar letra em numero
+        y=666;
+        z= x+y;
+        let h =String.fromCharCode(72,69,76,76,79);
+        
+        
+        let palavra ="Poorto!";
+
+        let l1= palavra.fromCharCodeAt(0);
+        let l2= palavra.fromCharCodeAt(1);
+        let l3= palavra.fromCharCodeAt(2);
+        let l4= palavra.fromCharCodeAt(3);
+        let l5= palavra.fromCharCodeAt(4);
+        let l6= palavra.fromCharCodeAt(5);
+
+        let l= l1 + "," + l2 + "," + l3 + "," + l4 + "," + l5 + "," + l6;
+
+        document.getElementById("aqui").innerHTML = "Como podemos ajudar?";
+        document.getElementById("aqui2").innerHTML =z;
+        document.getElementById("aqui3").innerHTML =h;
+        document.getElementById("aqui4").innerHTML = l;
+        
+    </script>
+
+</body> 
+</html>
