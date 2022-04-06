@@ -1,2 +1,2 @@
-# HTML5/CSS
+# HTML5/CSS/JavaScript
  
