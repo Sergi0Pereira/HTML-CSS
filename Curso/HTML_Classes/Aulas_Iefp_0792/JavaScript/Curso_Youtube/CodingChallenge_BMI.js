@@ -7,7 +7,7 @@ var heightM=1.95;
 var bmi_j = weightJ/ (heightJ*heightJ);
 var bmi_m = weightM/ (heightM*heightM);
 
-var higherBmi= bmi_m > bmi_j;
+var higherBmi= bmi_m < bmi_j;
 
 console.log(bmi_j , bmi_m);
-console.log("Is Mark\´s BMI higher than John\´s? " + higherBmi)
+console.log("Is Mark\´s BMI higher than John\´s? " + higherBmi);

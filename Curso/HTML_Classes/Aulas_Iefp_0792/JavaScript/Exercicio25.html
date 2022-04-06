@@ -8,15 +8,21 @@
     <title>Iniciacao ao JavaScript</title>
 </head>
 <body>
-    <button  type="button" onclick="alert('Seja, Bem-Vindo!')" > Nao Clicar!!</button>
+    <button  type="button" onclick="alert('Seja, Bem-Vindo!')" > Nao Clicar!!</button> <!-- funçao alert dentro do botao.Mostra uma caixa pop-up-->
+
+    <!-- Locais onde o JavaScript vai escrever conforme o id-->
     <p id="aqui"></p>
     <p id="aqui2"></p>
     <p id="aqui3"></p>
     <p id="aqui4"></p>
 
-    <script>
-        
+    <script> /* Aqui iniciamos o script em javascript */
+        // Escreve no local com o id aqui no texto a seguir ao igual
+        document.getElementById("aqui").innerHTML ="Escreve no local com o id aqui no texto a seguir ao igual";
+        // Declarar váriaveis com recurso ao let
         let x,y,z;
+        // atribuir valor às váriaveis
+        
         x= "x".charCodeAt(0); // transformar letra em numero
         y=666;
         z= x+y;

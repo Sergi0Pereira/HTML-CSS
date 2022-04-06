@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcoes e Botoes</title>
+</head>
+<body>
+    <h2>Calculadora</h2>
+        <p>Num_1</p><input id="n1" type="number">
+
+            <br><br> 
+
+        <p>Num_2</p><input id="n2" type="number"> 
+
+            <br><br> 
+        <!-- this.id retorna o id do botao para seleccionar a operaçao -->
+        <button type="button" id="bts"  onclick="executa(this.id)">Soma</button>    
+        <button type="button" id="btm" onclick="executa(this.id)">Menos</button>
+        <button type="button" id="btv" onclick="executa(this.id)">Multiplicar</button>
+        <button type="button" id="btd" onclick="executa(this.id)">Dividir</button>
+
+        <p>Resultado</p><input disabled id="res" type="number">
+    <script> 
+        // Notar que a function tem um argumento (Neste caso op)
+        function executa(op) { // op referencia-se a this.id da funcao executa
+            
+           
+            let n1 = parseInt(document.getElementById("n1").value); 
+            let n2 = parseInt(document.getElementById("n2").value);
+            let s;
+            
+            // Caso a operaçao seja ... executa a operaçao definida entre o case e o break;
+            switch(op){
+                case "bts":
+                    s=n1+n2;
+                    break;
+                case "btm":
+                    s=n1-n2; 
+                    break;
+                case "btv":
+                    s=n1*n2; 
+                    break;
+                case "btd":
+                    s=n1/n2; 
+                    break;
+                
+            }
+            document.getElementById('res').value=s;
+        }  
+        </script>
+      
+</body>
+</html>
