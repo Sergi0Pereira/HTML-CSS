@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Primeiro Programa</title>
+    <style>
+      body {
+        background-color: bisque;
+        color: grey;
+        font: normal 20px Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Olá Mundo</h1>
+    <p>Já me livrei da maldiçao.</p>
+    <script>
+      var nome = prompt("Qual é o Maior Clube do Mundo?"); // Podemos atribuir dados inseridos no prompt a variaveis..
+      alert("É o " + nome + "!");
+
+      var n1 = Number(prompt("Insira o primeiro Numero")); // Conversao de String em number
+      var n2 = Number(prompt("Insira o segundo Numero"));
+      s = n1 + n2; //Se nao tivesse realizado a conversao de string em number, o que o js fazia era concatenar os dois numeros..
+
+      // alert('A soma dos seus numeros é igual a ' + String(s)) // Conversao de Number emString (atençao as maisusculas)
+
+      alert(`A soma entre ${n1} e ${n2} é de ${s}`); // Ver nota nodeJs
+      /* nodeJs 
+      Template String
+
+      > `O Aluno ${nome} que tem ${Idade} tirou ${notas}`
+
+      ${} -> Simplificador de codigo do tipo :  'O aluno' + nome + 'que tem' + Idade + 'tirou' + notas'
+      */
+    </script>
+  </body>
+</html>
