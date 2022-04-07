@@ -26,11 +26,14 @@
 
       // alert('A soma dos seus numeros é igual a ' + String(s)) // Conversao de Number emString (atençao as maisusculas)
 
-      alert(`A soma entre ${n1} e ${n2} é de ${s}`); // Ver nota nodeJs
+      alert(`A soma entre ${n1}.e ${n2} é de ${s}`); // Ver nota nodeJs
+      document.write(`<h2>A soma entre ${n1} e ${n2} é de ${s}.<\h2>`); // document.write escreve na pagina e pode receber elementos html como por exemplo o h2
+      document.write(`<p> O seu clube é o ${nome.toUpperCase()}.`);
+      document.write(`<p> O seu clube é o ${nome.toLowerCase()}.`);
       /* nodeJs 
       Template String
 
-      > `O Aluno ${nome} que tem ${Idade} tirou ${notas}`
+      O Aluno ${nome} que tem ${Idade} tirou ${notas}`
 
       ${} -> Simplificador de codigo do tipo :  'O aluno' + nome + 'que tem' + Idade + 'tirou' + notas'
       */
