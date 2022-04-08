@@ -28,14 +28,29 @@
 
       alert(`A soma entre ${n1}.e ${n2} é de ${s}`); // Ver nota nodeJs
       document.write(`<h2>A soma entre ${n1} e ${n2} é de ${s}.<\h2>`); // document.write escreve na pagina e pode receber elementos html como por exemplo o h2
-      document.write(`<p> O seu clube é o ${nome.toUpperCase()}.`);
-      document.write(`<p> O seu clube é o ${nome.toLowerCase()}.`);
+  
+      document.write(`O seu clube é o ${nome.toUpperCase()}. <br>`);
+      document.write(`O seu clube é o ${nome.toLowerCase()}.<br>`);
+      document.write(`O numero de letras do seu clube é de ${nome.length}.`); // nao leva 
       /* nodeJs 
       Template String
 
       O Aluno ${nome} que tem ${Idade} tirou ${notas}`
 
       ${} -> Simplificador de codigo do tipo :  'O aluno' + nome + 'que tem' + Idade + 'tirou' + notas'
+
+      formatacao de Numeros em node.js
+
+      > n1
+      123.34455
+      > n1.toFixed(2)                          // Numero de casas decimais 
+      '123.34'
+      > n1.toFixed(2).replace('.' , ',')       // Mudança do carater ponto para virgula
+      '123,34'
+      > n1.toLocaleString('pt-PT' , {style: 'currency', currency: 'EUR'})                    // Atribuir uma moeda ao numero
+      '123,34 €' 
+
+
       */
     </script>
   </body>
