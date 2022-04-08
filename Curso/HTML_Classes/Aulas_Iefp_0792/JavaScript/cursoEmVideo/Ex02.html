@@ -16,6 +16,7 @@
   <body>
     <h1>Olá Mundo</h1>
     <p>Já me livrei da maldiçao.</p>
+    <p>Já me livrei da maldiçao2.</p>
     <script>
       var nome = prompt("Qual é o Maior Clube do Mundo?"); // Podemos atribuir dados inseridos no prompt a variaveis..
       alert("É o " + nome + "!");
@@ -31,7 +32,9 @@
   
       document.write(`O seu clube é o ${nome.toUpperCase()}. <br>`);
       document.write(`O seu clube é o ${nome.toLowerCase()}.<br>`);
-      document.write(`O numero de letras do seu clube é de ${nome.length}.`); // nao leva 
+      document.write(`O numero de letras do seu clube é de ${nome.length}.<br>`); // nao leva 
+      var par= document.getElementsByTagName('p')
+      document.write(par[1].innerHTML); // par[Aqui coloca-se o numero da tag ( neste caso o segundo paragrafo). Inicia no 0.]
       /* nodeJs 
       Template String
 
