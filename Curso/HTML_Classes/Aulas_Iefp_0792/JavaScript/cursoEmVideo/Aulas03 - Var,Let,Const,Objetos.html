@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Testes</title>
+  </head>
+
+  <body>
+    <script src="../funcoes.js"></script>
+    <h2>Página de Testes</h2>
+    <p>Perguntas</p>
+    <button type="button" onclick="pergunta()">
+      Clique aqui para saber a primeira pergunta.
+    </button>
+    <p id="x"></p>
+    <p id="y"></p>
+    <p id="clube"></p>
+    <p id="proprietario"></p>
+    <script>
+      var x = 10;
+      let y = 10;
+
+      {
+        var x = 12; //pode ser redeclarada no entanto modifica o seu valor
+        let y = 12; // Pode ser redeclarada.. neste bloco vale 12, fora dele vale 10
+        y = 15; // Nao se pode reclarar dentro do mesmo bloco;
+      }
+
+      {
+        let y = 26; // Aqui já podes.. Ou seja , as variaveis let sao redeclaraveis mas somente em blocos diferentes..
+        x = 33;
+      }
+      clube = "Porto"; // podemos atribuir valor à váriavel antes da sua criaçao (hoist) -- !!! Valido para VAR e nao para LET
+      var clube;
+
+      const pi = 3.14;
+      //pi = 12 + 3.14;  erro .. uma variável constante nao pode ser redefinida
+
+      document.getElementById("x").innerHTML = "O número x é o:" + x + "."; // pode ser usada aqui x=12
+      document.getElementById("y").innerHTML = "O número y é o:" + y + "."; // pode ser usada aqui y=10 (mas dentro do bloco vale 12)
+
+      document.getElementById("clube").innerHTML =
+        "O maior do mundo é o:" + clube;
+
+      //Criaçao de Objectos
+      // Podemos criar um "arreio" de caracteristicas de uma variavel... car conté, : tipo,modelo,cor,proprietario.. aceita nomes em qq lingua 
+      const car = {
+        type: "Mercedes",
+        model: "Class S",
+        color: "Azul",
+        proprietario: "Sérgio",
+      }
+      // Forma nao simplificada
+     /* document.getElementById("proprietario").innerHTML =
+        "O Proprietario do carro " + car.type + " " + car.model + " com a cor " + car.color + " é o : " + car.proprietario +".";*/
+      //forma simplificada .... ` texto ${variavel} ....`
+    document.getElementById("proprietario").innerHTML =
+        `O Proprietario do carro ${car.type} ${car.model} com a cor ${car.color} é o : ${car.proprietario}.`
+
+      let num=3;
+      let str= "3"
+      let res = num===str ?'iguais' : 'diferentes'
+      
+      document.write(res);
+    </script>
+  </body>
+</html>

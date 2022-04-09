@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arrays e For</title>
-</head>
-<body>
-    <h2>Arrays e for</h2>
 
-    <p id="aqui"></p>
-    <button type="button" onclick="imprime()">Imprime</button>
+    <!-- 
+       COLOCADA NO funcoes.js (ver no final do head)
     <script>
         function imprime() {
-        let jogadores= ["Otávio","Uribe","Diogo Costa","Evanilson"]
-        let msg="Os Jogadores do Porto sao:<br><br> "
+        let jogadores= ["Otávio","Uribe","Diogo Costa","Evanilson"];
+        let msg="Alguns Jogadores do Porto sao:<br><br> ";
         for(let j of jogadores) {
             msg+=j+"<br>";
             alert(j);
@@ -22,5 +19,12 @@
         document.getElementById('aqui').innerHTML = msg;
     }
     </script>
-</body>
+    -->
+    <script src="funcoes.js"></script>
+  </head>
+  <body>
+    <h2>Arrays e for</h2>
+    <p id="aqui"></p>
+    <button type="button" onclick="imprime()">Imprime</button>
+  </body>
 </html>
