@@ -11,19 +11,19 @@ a.addEventListener("mouseout", saiu);
 function clicar() {
   let a = document.getElementById("area");
   a.innerText = "Clicou!";
-  a.style.background = "red";
+  a.style.background = "#6E2F24";
 }
 
 function entrou() {
   let a = document.getElementById("area");
   a.innerText = "Entrou!";
-  a.style.background = "green";
+  a.style.background = "#516E0E";
 }
 
 function saiu() {
   let a = document.getElementById("area");
   a.innerText = "Saiu!";
-  a.style.background = "blue";
+  a.style.background = "#19376E";
 }
 
 function somar() {
@@ -33,6 +33,7 @@ function somar() {
     var n1 = Number(txt1.value)
     var n2 = Number(txt2.value)
     var s= n1 + n2
-    res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}` 
+    res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}.` 
+  
 
 }

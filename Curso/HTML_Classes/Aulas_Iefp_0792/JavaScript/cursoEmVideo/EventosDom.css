@@ -1,14 +1,29 @@
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
   margin: 0;
+  background-color:#8CBA22;
 }
 body {
   margin-top: 10px;
   margin-left: 10px;
 }
 
+h1{
+  box-sizing: content-box;
+  text-align: center;
+  margin-top: 40px;
+  background-color:#1851BA;
+  color: white;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height:50px;
+  border: 3px solid #19376E;
+}
+
 div#area {
-  background-color: green;
+  background-color: #6E2F24;
   color: white;
   width: 300px;
   height: 200px;
@@ -23,14 +38,52 @@ div#area {
   margin-bottom: auto;
 }
 div#contas {
-    background-color: rgb(127, 172, 255);
-    width: 300px;
-    height: 100px;
-    
+    background-color: rgb(25, 55, 110);
+    color: white;
+    width: 60px;
+    height: 80px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
     padding: 10px;
+    text-align: center;
+
+}
+
+input#cx1{
+  background-color: white;
+  color: black;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input#cx2{
+  background-color: white;
+  color: black;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:5px;
+}
+
+input#somar{
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#res{
+  background-color:white;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 300px;
+  height: 20px;
+  padding: 5px;
 
 }
