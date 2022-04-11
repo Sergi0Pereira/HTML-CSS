@@ -17,5 +17,5 @@ function pergunta() {
   prompt(pergunta1);
   document.getElementById("pergunta1").innerHTML = pergunta1;
 
-
 }
+
