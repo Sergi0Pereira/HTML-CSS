@@ -31,7 +31,7 @@ function numeros() {
   return a - b;}); // Esta funçao é nativa do javaScript e coloca os numeros por ordem
   numeros.sort(function (a, b) {
   return a - b;}); // Esta funçao é nativa do javaScript e coloca os numeros por ordem reversa
-  document.getElementById("numeros").innerHTML = numeros;
+  document.getElementById("numeros").innerHTML = `<strong>  ${numeros}  </strong>`;
 
 }
 
