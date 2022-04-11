@@ -1,0 +1,24 @@
+*{
+    background-color: lightgrey;
+    box-sizing: content-box;
+}
+
+body{
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+div{
+    background-color:rgba(240, 128, 128, 0.452);
+    width: 330px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    color: black;
+    font-size: 22px;
+   
+
+}
