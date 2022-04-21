@@ -1,26 +1,29 @@
-let soma=0;
-let contador=0;
+let soma = 0,
+  contador = 0,
+  med = 0;
 
-function media (bt) {
-    if (bt == "para") {
-      document.getElementById("fim").innerHTML = "Fim do Programa";
-      document.getElementById("media").innerHTML = "";
-      soma=0;
-      contador=0;
-    }else {
-      document.getElementById("fim").innerHTML = "";
-      while (bt == "num") {
-        let n = parseInt(document.getElementById("nota").value);
-        soma += n;
-        contador++;
-        break;
-        if (bt == "para") {
-          
-      }
+function media(botao) {
+  document.getElementById("media").innerHTML = "";
 
-      document.getElementById("nota").value = "";
-      document.getElementById("nota").focus(); //  coloca o apontador na caixa
-      let m = soma / contador;
-      
-    }
+  while (botao == "num") {
+    let notatxt = document.getElementById("nota");
+    let nota = Number(notatxt.value);
+    soma += nota;
+    contador++;
+    med = soma / contador;
+    document.getElementById("nota").value = ""; // Faz reset à caixa de texto
+    document.getElementById("nota").focus(); //  Coloca o apontador na caixa
+    break;
+  }
+
+  if (botao == "para") {
+    document.getElementById("media").innerHTML =
+      "Fim do Programa.<br><br>Inseriu " +
+      contador +
+      " números e a sua média é de: " +
+      med;
+    soma = 0;
+    contador = 0;
+    med = 0;
+  }
 }

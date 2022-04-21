@@ -1,4 +1,4 @@
-//var a = document.getElementById("area"); Colocada aqui fora ficamos com a funcionalidade de a chamar sempe que quiseremos dentro deuma funcao , no entanto nao é recomendado devido a problemas de memória
+//var a = document.getElementById("area"); Colocada aqui fora ficamos com a funcionalidade de a chamar sempre que quiseremos dentro deuma funcao , no entanto nao é recomendado devido a problemas de memória
 
 let a = document.getElementById("area");
 

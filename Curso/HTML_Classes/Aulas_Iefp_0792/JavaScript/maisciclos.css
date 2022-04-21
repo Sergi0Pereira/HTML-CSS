@@ -1,12 +1,93 @@
-*{
-    box-sizing: border-box;   
+body {
+  margin: 0%;
+  background-color: #9C301E  ;
+  position: relative;
+  
+}
+.cabecalho{
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  background-color: #142636;
+  width: 100%;
+  height: 200px;
+
+ 
 }
 
-#ciclos{
-
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    
+.ciclos {
+  position: relative;
+  border: 2px solid #203d4e;
+  text-align: center;
+  background-color: #852020cc;
+  width: 50%;
+  top:200px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
+.barraesq{
+  box-sizing: border-box;
+  position: fixed;
+  background-color: #503322;
+  width: 24.9%;
+  height: 100%;
+  top:201px;
+  left: 0px;
+}
+.barradir{
+  box-sizing: border-box;
+  position: fixed;
+  background-color: #503322;
+
+  width: 24.9%;
+  height: 100%;
+  top:201px;
+  right: 0px;
+}
+
+.titulo {
+  position: static;
+  box-sizing: border-box;
+  padding-right: 10px;
+  border: 1px solid #203d4e;
+  background-color: #428ab8;
+  margin-top: 0px;
+  color: #1a313f;
+  width: 100%;
+  height: 100%;
+}
+
+#num,
+#para {
+  position: relative;
+  box-sizing: border-box;
+  color: #1a313f;
+  font-weight: bold;
+  background-color: #428ab8;
+  margin-bottom: 2px;
+}
+
+#nota {
+  position: relative;
+  border: 1px solid #203d4e;
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 550;
+}
+
+::placeholder {
+  color: black;
+  font-weight: 550;
+}
+
+#media {
+  position: relative;
+  margin-top: 15px;
+  color: #e0aaaa;
+  padding: 15px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
