@@ -1,5 +1,5 @@
-let soma=0;
-let contador=0;
+let m=0;
+
 
 function media (bt) {
     if (bt == "para") {
